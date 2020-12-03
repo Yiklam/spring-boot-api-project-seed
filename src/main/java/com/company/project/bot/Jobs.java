@@ -27,8 +27,8 @@ public class Jobs {
 
      private Logger log = LoggerFactory.getLogger(Jobs.class);
 
-     private String words[] = new String[]{"宝贝儿，别忘了喝水啦。" ,"静宝贝，该喝水啦。" ,"亲爱的，到时间喝水啦。"};
-     private String face[] = new String[]{"・ω・" ,"o(*≧▽≦)ツ" ,"⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄",""};
+     private String words[] = new String[]{"宝贝儿，别忘了喝水啦。" ,"静宝贝，该喝水啦。" ,"亲爱的，到时间喝水啦。","静宝宝，喝水啦。","小甜甜，一大杯水走起。","亲亲，喝水水啦。"};
+     private String face[] = new String[]{"・ω・" ,"o(*≧▽≦)ツ" ,"⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄","（づ￣3￣）づ","๑¯◡¯๑"};
 
 
     @Scheduled(cron="* * * * * ?")
@@ -58,7 +58,7 @@ public class Jobs {
         //创建参数列表
         List<NameValuePair> list1 = new ArrayList<NameValuePair>();
         list1.add(new BasicNameValuePair("text", sendStr));
-        list1.add(new BasicNameValuePair("chat_id", "561311173"));
+        list1.add(new BasicNameValuePair("chat_id", "809538155"));
         //url格式编码
         UrlEncodedFormEntity uefEntity1 = new UrlEncodedFormEntity(list1, "UTF-8");
         post1.setEntity(uefEntity1);
